@@ -100,7 +100,7 @@ namespace SmartCache
             //
             Hypergrid cacheSearchSpace = new Hypergrid(
                 name: "smart_cache_config",
-                dimension: new CategoricalDimension("cache_implementation", CacheEvictionPolicy.LeastRecentlyUsed, CacheEvictionPolicy.MostRecentlyUsed))
+                dimension: new CategoricalDimension("cache_implementation", CacheEvictionPolicy.LeastRecentlyUsed, CacheEvictionPolicy.MostRecentlyUsed, CacheEvictionPolicy.LeastFrequentlyUsed))
             .Join(
                 subgrid: new Hypergrid(
                     name: "lru_cache_config",
@@ -110,7 +110,12 @@ namespace SmartCache
                 subgrid: new Hypergrid(
                     name: "mru_cache_config",
                     dimension: new DiscreteDimension("cache_size", min: 1, max: 1 << 12)),
-                onExternalDimension: new CategoricalDimension("cache_implementation", CacheEvictionPolicy.MostRecentlyUsed));
+                onExternalDimension: new CategoricalDimension("cache_implementation", CacheEvictionPolicy.MostRecentlyUsed))
+            .Join(
+                subgrid: new Hypergrid(
+                    name: "lfu_cache_config",
+                    dimension: new DiscreteDimension("cache_size", min: 1, max: 1 << 12)),
+                onExternalDimension: new CategoricalDimension("cache_implementation", CacheEvictionPolicy.LeastFrequentlyUsed));
 
             // Create optimization problem.
             //
@@ -126,7 +131,7 @@ namespace SmartCache
                 ContextSpace = null,
                 ObjectiveSpace = new Hypergrid(
                     name: "objectives",
-                    dimensions: new ContinuousDimension(name: "HitRate", min: 0.0, max: 1.0)),
+                    dimensions: new ContinuousDimension(name: "Latency", min: 0.0, max: 2000.0)),
             };
 
             // Define optimization objective.
@@ -136,8 +141,10 @@ namespace SmartCache
                 {
                     // Tell the optimizer that we want to maximize hit rate.
                     //
-                    Name = "HitRate",
-                    Minimize = false,
+                    // Name = "HitRate",
+                    // Minimize = true,
+                    Name = "Latency",
+                    Minimize = true,
                 });
 
             // Get a local reference to the optimizer to reuse when processing messages later on.
@@ -191,6 +198,8 @@ namespace SmartCache
                     isInCacheCount = 0;
                     totalRequestCount = 0;
 
+                    double latency = msg.Latency;
+
                     // Let's assemble an observation message that consists of
                     // the config and the resulting performance.
                     //
@@ -201,6 +210,7 @@ namespace SmartCache
                     {
                         CacheEvictionPolicy.LeastRecentlyUsed => currentConfigDictionary["lru_cache_config.cache_size"] = smartCacheConfig.CacheSize,
                         CacheEvictionPolicy.MostRecentlyUsed => currentConfigDictionary["mru_cache_config.cache_size"] = smartCacheConfig.CacheSize,
+                        CacheEvictionPolicy.LeastFrequentlyUsed => currentConfigDictionary["lfu_cache_config.cache_size"] = smartCacheConfig.CacheSize,
                         _ => throw new NotImplementedException(),
                     };
 
@@ -210,7 +220,8 @@ namespace SmartCache
                     //
                     Console.WriteLine("Register an observation");
 
-                    OptimizerProxy.Register(currentConfigJsonString, "HitRate", hitRate);
+                    // OptimizerProxy.Register(currentConfigJsonString, "HitRate", hitRate);
+                    OptimizerProxy.Register(currentConfigJsonString, "Latency", latency);
                 }
 
                 // Now, ask the optimizer for a new configuration suggestion.
@@ -229,7 +240,8 @@ namespace SmartCache
                 {
                     CacheEvictionPolicy.LeastRecentlyUsed => (int)newConfigDictionary["lru_cache_config.cache_size"].GetDouble(),
                     CacheEvictionPolicy.MostRecentlyUsed => (int)newConfigDictionary["mru_cache_config.cache_size"].GetDouble(),
-                    _ => throw new NotSupportedException(),
+                    CacheEvictionPolicy.LeastFrequentlyUsed => (int)newConfigDictionary["lfu_cache_config.cache_size"].GetDouble(),
+                        _ => throw new NotSupportedException(),
                 };
             }
             else

@@ -43,6 +43,7 @@ namespace SmartCache
     {
         LeastRecentlyUsed,
         MostRecentlyUsed,
+        LeastFrequentlyUsed,
     }
 
     /// <summary>
@@ -91,5 +92,7 @@ namespace SmartCache
     [CodegenMessage]
     internal partial struct RequestNewConfigurationMessage
     {
+        [ScalarSetting]
+        internal double Latency;
     }
 }

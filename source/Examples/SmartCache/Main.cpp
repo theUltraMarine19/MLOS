@@ -19,6 +19,7 @@
 //
 //*********************************************************************
 
+#include <chrono>
 // Include all the common headers for the application
 // (including Mlos.Core and component settings registry code generation output)
 //
@@ -158,13 +159,17 @@ main(
 
     // Now we run a workload to exercise the SmartCache.
     //
-    for (int observations = 0; observations < 100; observations++)
+    for (int observations = 0; observations < 200; observations++)
     {
         std::cout << "observations: " << observations << std::endl;
+        std::chrono::duration<double, std::milli> time_span;
 
         for (int i = 0; i < 20; i++)
         {
+            std::chrono::high_resolution_clock::time_point t1 = std::chrono::high_resolution_clock::now();
             CyclicalWorkload(2048, smartCache);
+            std::chrono::high_resolution_clock::time_point t2 = std::chrono::high_resolution_clock::now();
+            time_span = std::chrono::duration_cast<std::chrono::duration<double, std::milli>>(t2 - t1);
         }
 
         // After having run a workload for a while, we want to check for a new
@@ -211,7 +216,9 @@ main(
         // It's simply a signal to send to the external agent to request a new
         // config be populated in the shared memory region.
         //
-        SmartCache::RequestNewConfigurationMessage msg = { 0 };
+        SmartCache::RequestNewConfigurationMessage msg;
+        msg.Latency = time_span.count();
+        // msg = { 0 };
         mlosContext.SendTelemetryMessage(msg);
 
         // Now, we wait for the external agent to respond to our request.

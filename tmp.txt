@@ -1,0 +1,918 @@
+Mlos.Agent.Server
+Connecting to the Mlos.Optimizer
+Starting target/bin/Release/SmartCache
+observations: 0
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Now listening on: http://[::]:5000
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Content root path: /src/MLOS
+Starting Mlos.Agent
+Waiting for Mlos.Agent to exit
+Found settings registry assembly at /src/MLOS/target/bin/Release/SmartCache.SettingsRegistry.dll
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 100
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2185}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2185}
+observations: 1
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2185
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3738}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3738}
+observations: 2
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 3738
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 113}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 113}
+observations: 3
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 113
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 3523}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 3523}
+observations: 4
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 3523
+} HitRate = 1
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3325}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3325}
+observations: 5
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 3325
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 819}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 819}
+observations: 6
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 819
+} HitRate = 0.38009281875915973
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3416}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3416}
+observations: 7
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 3416
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 4073}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 4073}
+observations: 8
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 4073
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3455}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3455}
+observations: 9
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 3455
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2208}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2208}
+observations: 10
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2208
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2925}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2925}
+observations: 11
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2925
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2940}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2940}
+observations: 12
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 2940
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2975}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2975}
+observations: 13
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 2975
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3146}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3146}
+observations: 14
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 3146
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2834}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2834}
+observations: 15
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 2834
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2260}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2260}
+observations: 16
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2260
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 3657}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 3657}
+observations: 17
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 3657
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2126}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2126}
+observations: 18
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2126
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1003}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1003}
+observations: 19
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1003
+} HitRate = 0.46548607718612606
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2558}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2558}
+observations: 20
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 2558
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2600}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2600}
+observations: 21
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 2600
+} HitRate = 1
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 287}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 287}
+observations: 22
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 287
+} HitRate = 0.13319491939423547
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 1815}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 1815}
+observations: 23
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 1815
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 865}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 865}
+observations: 24
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 865
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 3333}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 3333}
+observations: 25
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 3333
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 597}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 597}
+observations: 26
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 597
+} HitRate = 0.27706399609184174
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2900}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2900}
+observations: 27
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 2900
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2569}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2569}
+observations: 28
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 2569
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2787}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2787}
+observations: 29
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 2787
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2082}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2082}
+observations: 30
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 2082
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2127}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2127}
+observations: 31
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 2127
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1851}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1851}
+observations: 32
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1851
+} HitRate = 0.859037616023449
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 1753}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 1753}
+observations: 33
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 1753
+} HitRate = 1
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2728}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2728}
+observations: 34
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 2728
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2313}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2313}
+observations: 35
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 2313
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2704}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 2704}
+observations: 36
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 2704
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1119}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1119}
+observations: 37
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1119
+} HitRate = 0.5193209574987787
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1344}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1344}
+observations: 38
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1344
+} HitRate = 0.6237420615534929
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1350}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1350}
+observations: 39
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1350
+} HitRate = 0.6265266243282853
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1375}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1375}
+observations: 40
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1375
+} HitRate = 0.6381289692232536
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1353}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1353}
+observations: 41
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1353
+} HitRate = 0.6279189057156814
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1794}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1794}
+observations: 42
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1794
+} HitRate = 0
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1474}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1474}
+observations: 43
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1474
+} HitRate = 0.6840742550073278
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 95}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 95}
+observations: 44
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 95
+} HitRate = 0.044088910600879334
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2638}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2638}
+observations: 45
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 2638
+} HitRate = 1
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1672}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1672}
+observations: 46
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1672
+} HitRate = 0.7759648265754763
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1743}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1743}
+observations: 47
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1743
+} HitRate = 0.8089154860771861
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 876}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 876}
+observations: 48
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 876
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 3322}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 3322}
+observations: 49
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 3322
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1113}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1113}
+observations: 50
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1113
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2762}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2762}
+observations: 51
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 2762
+} HitRate = 1
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 141}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 141}
+observations: 52
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 141
+} HitRate = 0.06543722520762091
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1568}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1568}
+observations: 53
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1568
+} HitRate = 0.7276990718124084
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1550}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1550}
+observations: 54
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1550
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2269}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2269}
+observations: 55
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2269
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1897}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1897}
+observations: 56
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1897
+} HitRate = 0
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3188}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3188}
+observations: 57
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 3188
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1812}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1812}
+observations: 58
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1812
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 3623}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 3623}
+observations: 59
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 3623
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1637}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1637}
+observations: 60
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1637
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 3819}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 3819}
+observations: 61
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 3819
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 587}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 587}
+observations: 62
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 587
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1891}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1891}
+observations: 63
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1891
+} HitRate = 0
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3932}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3932}
+observations: 64
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 3932
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1902}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1902}
+observations: 65
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1902
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1838}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1838}
+observations: 66
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1838
+} HitRate = 0
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 942}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 942}
+observations: 67
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 942
+} HitRate = 0.43717635564240354
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3533}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 3533}
+observations: 68
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 3533
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2864}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 2864}
+observations: 69
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 2864
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2048}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2048}
+observations: 70
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2048
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1682}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1682}
+observations: 71
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1682
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2049}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2049}
+observations: 72
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2049
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2050}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2050}
+observations: 73
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2050
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 973}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 973}
+observations: 74
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 973
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1094}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 1094}
+observations: 75
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 1094
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 1081}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 1081}
+observations: 76
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 1081
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2045}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2045}
+observations: 77
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2045
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 3247}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 3247}
+observations: 78
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 3247
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2036}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2036}
+observations: 79
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2036
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 3240}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 3240}
+observations: 80
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 3240
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 781}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 781}
+observations: 81
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 781
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2361}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2361}
+observations: 82
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2361
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 3937}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 3937}
+observations: 83
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 3937
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 4002}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 4002}
+observations: 84
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 4002
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2046}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2046}
+observations: 85
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2046
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2304}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2304}
+observations: 86
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2304
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 47}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 47}
+observations: 87
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 47
+} HitRate = 1
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1482}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1482}
+observations: 88
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1482
+} HitRate = 0.6877870053737176
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1617}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1617}
+observations: 89
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1617
+} HitRate = 0.7504396678065461
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1595}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1595}
+observations: 90
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1595
+} HitRate = 0.7402296042989741
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1614}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1614}
+observations: 91
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1614
+} HitRate = 0.74904738641915
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2477}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2477}
+observations: 92
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2477
+} HitRate = 0.95
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 989}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 989}
+observations: 93
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 989
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2043}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2043}
+observations: 94
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2043
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2044}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2044}
+observations: 95
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2044
+} HitRate = 0
+Suggest random=False {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2046}
+Suggesting: {"cache_implementation": "LeastRecentlyUsed", "lru_cache_config.cache_size": 2046}
+observations: 96
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastRecentlyUsed",
+  "lru_cache_config.cache_size": 2046
+} HitRate = 0
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1584}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1584}
+observations: 97
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1584
+} HitRate = 0.735124572545188
+Suggest random=False {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1833}
+Suggesting: {"cache_implementation": "MostRecentlyUsed", "mru_cache_config.cache_size": 1833}
+observations: 98
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "MostRecentlyUsed",
+  "mru_cache_config.cache_size": 1833
+} HitRate = 0.8506839276990719
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 365}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 365}
+observations: 99
+Waiting for agent to respond with a new configuration.
+Register an observation
+Register {
+  "cache_implementation": "LeastFrequentlyUsed",
+  "lfu_cache_config.cache_size": 365
+} HitRate = 1
+Suggest random=False {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 39}
+Suggesting: {"cache_implementation": "LeastFrequentlyUsed", "lfu_cache_config.cache_size": 39}
+
+[40m[32minfo[39m[22m[49m: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
+Mlos.Agent exited.
